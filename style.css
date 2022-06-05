@@ -1,0 +1,10 @@
+html {  
+    scroll-behavior: smooth;
+} 
+h2, h3, h4, .nav-items, #transition, footer {
+    text-align: center;
+} 
+/* ******************************** HEADER ******************************************************* */
+header {
+    background:;
+} 
