@@ -5,6 +5,14 @@ h2, h3, h4, .nav-items, #transition, footer {
     text-align: center;
 } 
 /* ******************************** HEADER *********************************************** */
+.collapse {
+    margin-left: 4%;
+}
+.nav-items {
+    color: darkslategray;
+    font-weight: bold;
+    padding-right: 45px;
+}
 header {
     background-image: url("BACGROUND 7.jpg");
     background-size: cover;
@@ -46,10 +54,79 @@ h1  {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
-overflow: hidden;
-padding-right: 20px;
+    overflow: hidden;
+    padding-right: 20px;
 }
 .elements .button {
     text-align: right;
     margin: 15px 4% 0 0;
 } 
+/* ********************************** RIGHT PART ************************************ */
+#rightPart { 
+    background-color: tan;
+    border-radius: 20px;
+    padding: 20px;
+}  
+.tips {
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+}
+.tips h4 {
+    position: relative;
+    color: rgb(47, 20, 201);
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000, 
+    1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000,
+}    
+.tips:hover {
+    transform: scale(1.08);
+    opacity: 0.7;
+    transition: ease-out 0.2s;
+}     
+#transition { 
+    padding: 50px 0;
+} 
+#transition img {
+    animation: myAnim 6s ease 0s 1 normal forwards; 
+}
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+/* ********************************** NEWSLETTER ************************************ */
+#newsletter {
+    background: url(pigment.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 370px;
+    width: 70%;
+    min-width: 450px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 70px;
+}
+#newsletter h4 {
+    margin-top: 15px;
+    padding: 100px 0 20px 0;
+    font-size: 2em;
+    text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000, 
+    1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000,
+}
+#newsletter .input-group {
+    width: 40%;
+    min-width: 350px;
+    margin: 0 auto;
+}
+footer {
+    background-color: #0cf5a0;
+    padding: 15px 0 4px 0;
+}
